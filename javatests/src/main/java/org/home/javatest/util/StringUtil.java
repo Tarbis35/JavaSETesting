@@ -8,4 +8,13 @@ public class StringUtil {
         }
         return result;
     }
+    public static boolean isEmpty(String str){
+        if (str != null){
+            if(str.isEmpty()){
+                return true;
+            }else return str.isBlank();
+        }else{
+            return true;
+        }
+    }
 }
